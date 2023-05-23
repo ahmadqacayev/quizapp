@@ -8,7 +8,7 @@
                             </a></li>
                         <li><a href="{{route('quiz.create')}}"><i class="menu-icon icon-bullhorn"></i> Create Quiz </a>
                         </li>
-                        <li><a href="{{route('quiz.index')}}l"><i class="menu-icon icon-inbox"></i>View Quiz </a></li>
+                        <li><a href="{{route('quiz.index')}}"><i class="menu-icon icon-inbox"></i>View Quiz </a></li>
                     </ul>
 
                     <ul class="widget widget-menu unstyled">

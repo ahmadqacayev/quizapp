@@ -38,6 +38,9 @@
                                     <td>{{$quiz->name}}</td>
                                     <td>{{$quiz->description}}</td>
                                     <td>{{$quiz->minutes}}</td>
+                                    <td><a href="{{route('quiz.question', $quiz->id)}}"> <button class="btn btn-inverse">View Questions</button></a>
+
+                                    </td>
                                     <td>
                                         <a href="{{route('quiz.edit',$quiz->id)}}"><button class="btn btn-primary">Edit</button></a>
                                     </td>
