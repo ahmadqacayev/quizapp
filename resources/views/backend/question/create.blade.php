@@ -10,7 +10,7 @@
                 <div class="alert alert-success">{{Session::get('message')}}</div>
             @endif
 
-            <form action="{{route('question.store')}}" method="POST">
+                <form action="{{route('question.store')}}" method="POST">
                 @csrf
                 <div class="module">
                     <div class="module-head">
@@ -18,6 +18,7 @@
                     </div>
 
                     <div class="module-body">
+
                         <div class="control-group">
                             <lable class="control-label">Select Quiz</lable>
                             <div class="controls">

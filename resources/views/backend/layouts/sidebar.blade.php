@@ -18,6 +18,19 @@
                     </ul>
                     <!--/.widget-nav-->
 
+                    <ul class="widget widget-menu unstyled">
+                        <li><a href="{{route('user.create')}}"><i class="menu-icon icon-bullhorn"></i> Create User </a>
+                        </li>
+                        <li><a href="{{route('user.index')}}"><i class="menu-icon icon-inbox"></i>View User </a></li>
+                    </ul>
+                    <!--/.widget-nav-->
+
+                    <ul class="widget widget-menu unstyled">
+                        <li><a href="{{route('user.exam')}}"><i class="menu-icon icon-bullhorn"></i> Assign Exam </a>
+                        </li>
+                        <li><a href="{{route('view.exam')}}"><i class="menu-icon icon-inbox"></i>View User Exam</a></li>
+                    </ul>
+                    <!--/.widget-nav-->
 
                     <ul class="widget widget-menu unstyled">
                         <li><a href="ui-button-icon.html"><i class="menu-icon icon-bold"></i> Buttons </a></li>
@@ -37,7 +50,17 @@
                                 <li><a href="other-user-listing.html"><i class="icon-inbox"></i>All Users </a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><i class="menu-icon icon-signout"></i>Logout </a></li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                <i class="icon-inbox"></i> {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>
                     </ul>
                 </div>
                 <!--/.sidebar-->
