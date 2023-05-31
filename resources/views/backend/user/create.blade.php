@@ -54,7 +54,7 @@
                         <div class="control-group">
                             <label class="control-lable" for="password">Password</label>
                             <div class="controls">
-                                <input type="text" name="password" class="span8 @error('password') border-red @enderror" placeholder="password" value=" {{old('password')}}  " >
+                                <input type="password" name="password" class="span8 @error('password') border-red @enderror" placeholder="password" value=" {{old('password')}}  " >
                             </div>
                             @error('password')
                             <span class="invalid-feedback" role="alert">
